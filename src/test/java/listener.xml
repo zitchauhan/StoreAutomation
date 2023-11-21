@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="StoreAutomation">
+	<listeners>
+		<listener class-name="listeners.Listeners" />
+	</listeners>
+	<test name="LoginDemo">
+		<classes>
+			<class name="listeners.LoginDemo">
+				<methods>
+					<exclude name="LoginByEmail" />
+					<include name="LoginByFacebook" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
